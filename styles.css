@@ -1,0 +1,81 @@
+:root{
+  --primary-color: #dc3545;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;  padding: 0;
+}
+body{
+  background: #e9ecef;
+}
+.wrapper{
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.container{
+  background: #FFF;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0,0, 0.2);
+  padding: 20px; min-height: 300px;
+}
+h1{
+  text-align: center;
+  font-family: 'Saira Extra Condensed', sans-serif; 
+}
+p.lead{
+  font-family: 'Yellowtail', cursive;
+  font-size: 24px;
+  position: relative;
+  text-align: center;
+}
+p.lead::after{
+  position: absolute;
+  content: '';
+  width: 75px;
+  height: 4px;
+  background-color: var(--primary-color);  
+  bottom: -15px;
+  transform: translate(-50%);
+  left: 50%;
+}
+
+h2{text-align: center;
+  font-family: 'Saira Extra Condensed', sans-serif; 
+  font-size: 30px; margin: 30px 0; color: var(--primary-color);  
+}
+.progress{
+  background-color: #d1d9e1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+}
+.progress_bar{
+  background-color: var(--primary-color);  
+  border-radius: 20px;
+}
+.content_wrapper{
+  max-width: 1200px;
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+
+/*/////////////////////////////////////////////////////////////
+  [ Responsive CSS Starts Here ]
+*/
+@media(max-width: 600px){
+  .container{
+    width: 90%;
+  }
+  .display-3 {
+    font-size: 2.5rem;
+  }
+  p.lead {  
+    font-size: 21px;
+  }
+}
